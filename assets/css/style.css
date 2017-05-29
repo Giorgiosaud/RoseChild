@@ -1,0 +1,17 @@
+.heading-page-cover-section{
+margin-top:auto;
+}
+div#status:before {
+    content:'';
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    background-image:url('http://digitalprintpublicidad.com/site/wp-content/uploads/2017/05/@114.jpg');
+    z-index:10000;
+    height:100%;
+    width:100%;
+    background-size: contain;
+}
+div#status{
+overflow:hidden;
+}
