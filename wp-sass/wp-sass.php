@@ -79,7 +79,7 @@ class wp_sass {
 	 */
 	public function parse_stylesheet( $src, $handle ) {
 
-		// we only want to handle .less files
+		// we only want to handle .sass,.scss,.sass.php  and .scss.php files
 		if ( ! preg_match( "/\.(?:sass|scss)(\.php)?$/", preg_replace( "/\?.*$/", "", $src ) ) )
 			return $src;
 
@@ -220,7 +220,7 @@ class wp_sass {
 	public function get_cache_dir( $path = true ) {
 
 		// get path and url info
-		$upload_dir = wp_upload_dir();
+		$upload_dir = get_stylesheet_directory();
 
 		if ( $path ) {
 			$dir = apply_filters( 'wp_sass_cache_path', trailingslashit( $upload_dir[ 'basedir' ] ) . 'wp-sass-cache' );
