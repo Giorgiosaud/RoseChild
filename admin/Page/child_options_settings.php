@@ -58,6 +58,12 @@ class MySettingsPage
     }
     public function script_options(){
         ?>
+        <style type="text/css">
+            .imagen_element{
+                width:300px;
+                height:auto;
+            }
+        </style>
         <script>
           jQuery(document).ready(function($) {
              $('.imagen_upload').click(function(e) {
