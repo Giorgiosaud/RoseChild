@@ -220,7 +220,7 @@ class wp_sass {
 	public function get_cache_dir( $path = true ) {
 
 		// get path and url info
-		$upload_dir = get_stylesheet_directory();
+		$upload_dir = wp_upload_dir();
 
 		if ( $path ) {
 			$dir = apply_filters( 'wp_sass_cache_path', trailingslashit( $upload_dir[ 'basedir' ] ) . 'wp-sass-cache' );
