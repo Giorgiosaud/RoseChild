@@ -1,3 +1,3 @@
 .theme{
-	color:ligthen(red,20);
+	color:lighten(red,20%);
 }
