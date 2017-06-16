@@ -1,6 +1,4 @@
-<?php $optionsChild=get_option('child_theme') ?>
-
-$imagen: <?php echo wp_get_attachment_image($optionsChild['logo_cargador'],'full',false,array('class'=>'img-responsive logo-fixed on-pc')); ?>;
+$imagen: "<?php echo wp_get_attachment_image(get_option('child_theme','logo_cargador'),'full',false,array()); ?>";
 
 .theme{
 	background-image:url($imagen);
