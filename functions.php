@@ -20,8 +20,8 @@ function my_theme_enqueue_styles() {
     wp_localize_script( 'rose-functions', 'rose_ajax', array(
         'ajaxurl' => esc_url(admin_url( 'admin-ajax.php' 
           ) ) ) );
-    wp_enqueue_style( 'style', get_stylesheet_directory_uri() . '/scss/style.scss' );
-    
+    wp_enqueue_style( 'style', get_stylesheet_directory_uri() . '/scss/style.scss.php' );
+
 }
       add_action( 'admin_enqueue_scripts', 'load_admin_style' );
 function load_admin_style(){
