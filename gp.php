@@ -66,9 +66,12 @@ switch (strtolower($_SERVER['HTTP_X_GITHUB_EVENT'])) {
 		break;
 
 	case 'push':
-		if(strpos($payload->commits[0]->message,'digitalp'))
+		if(strpos($payload->commits[0]->message,'digitalp')){
 			exec('git pull');
-		print_r('pulled'); # For debug only. Can be found in GitHub hook log.
+		}
+		else{
+			print_r('pulled'); # For debug only. Can be found in GitHub hook log.
+		}
 		break;
 
 		//  case 'create':
