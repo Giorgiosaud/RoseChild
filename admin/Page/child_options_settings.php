@@ -49,7 +49,7 @@ class MySettingsPage
                 // This prints out all hidden setting fields
     			settings_fields( 'child_theme_group' );
     			do_settings_sections( 'options_child' );
-                do_action('script_options_childs')
+                do_action('script_options_childs');
                 submit_button();
                 ?>
             </form>
