@@ -58,32 +58,32 @@ class MySettingsPage
     }
     public function script_options(){
         ?>
-    	<script>
-    		jQuery(document).ready(function($) {
-    			$('.imagen_upload').click(function(e) {
-    				e.preventDefault();
-    				var	este=$(this),
-    				input=este.data('input-selector'),
-    				image=este.data('image-selector');
-    				var custom_uploader = wp.media({
-    					title: 'Custom Image',
-    					button: {
-    						text: 'Upload Image'
-    					},
+        <script>
+          jQuery(document).ready(function($) {
+             $('.imagen_upload').click(function(e) {
+                e.preventDefault();
+                var	este=$(this),
+                input=este.data('input-selector'),
+                image=este.data('image-selector');
+                var custom_uploader = wp.media({
+                   title: 'Custom Image',
+                   button: {
+                      text: 'Upload Image'
+                  },
                 multiple: false  // Set this to true to allow multiple files to be selected
             })
-    				.on('select', function() {
-    					var attachment = custom_uploader.state().get('selection').first().toJSON();
-    					$(image).attr('src', attachment.url);
-    					$(input).val(attachment.id);
+                .on('select', function() {
+                   var attachment = custom_uploader.state().get('selection').first().toJSON();
+                   $(image).attr('src', attachment.url);
+                   $(input).val(attachment.id);
 
-    				})
-    				.open();
-    			});
-    		});
-    	</script>
-    	<?php
-    }
+               })
+                .open();
+            });
+         });
+     </script>
+     <?php
+ }
 
     /**
      * Register and add settings
