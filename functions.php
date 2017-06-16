@@ -1,7 +1,7 @@
 <?php
-define('CHILD_THEME_DIR',get_stylesheet_directory());
+define('CHILD_THEME_DIR', get_stylesheet_directory());
 define('CHILD_ADMIN_DIR', CHILD_THEME_DIR . '/admin');
-
+define('CHILD_THEME_URI', get_stylesheet_directory_uri());
 require_once CHILD_ADMIN_DIR.'/initialize.php';
 
 function my_theme_enqueue_styles() {
