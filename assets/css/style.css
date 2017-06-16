@@ -1,6 +1,10 @@
 .heading-page-cover-section{
 margin-top:auto;
 }
+.wpb_gmaps_widget .wpb_wrapper{
+    margin: 0 !important;
+    padding: 0 !important;
+}
 div#status:before {
     content:'';
     display:flex;

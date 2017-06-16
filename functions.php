@@ -18,9 +18,3 @@ function my_theme_enqueue_styles() {
   ) ) ) );
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
-add_action( 'cmb2_init', 'digital_portfolio_metabox' );
-function digital_portfolio_metabox(){
-//	cmb2_update_option('8',rose_get_prefix('style'),'Only Content',false);
-//	$portfolioMB=cmb2_get_metabox('portfolio');
-//	$field=$portfolioMB->get_field( rose_get_prefix('style'));
-}
