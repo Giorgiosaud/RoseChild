@@ -23,9 +23,9 @@ function my_theme_enqueue_styles() {
 }
 // enqueue a .less style sheet
 if ( ! is_admin() )
-    wp_enqueue_style( 'style', get_stylesheet_directory_uri() . '/style.scss' );
+    wp_enqueue_style( 'style', get_stylesheet_directory_uri() . '/scss/style.scss' );
 else
-    wp_enqueue_style( 'admin', get_stylesheet_directory_uri() . '/admin.sass.php' );
+    wp_enqueue_style( 'admin', get_stylesheet_directory_uri() . '/scss/admin.scss.php' );
 
 // you can also use .less files as mce editor style sheets
 add_editor_style( 'editor-style.sass' );
