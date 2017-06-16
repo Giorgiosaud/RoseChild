@@ -147,7 +147,7 @@ class MySettingsPage
     	echo $imagen;
     	if($imagen='')
     		echo '<img class="imagen_element imagen_upload" src="" />';
-    	printf('<input class="logo_cargador_url" type="text" name="child_theme[logo_cargador]" value="%s">', $logoCargador);
+    	printf('<input class="logo_cargador_url" type="hidden" name="child_theme[logo_cargador]" value="%s">', $logoCargador);
     	echo '<a href="#" class="imagen_upload" data-input-selector=".logo_cargador_url" data-image-selector=".imagen_upload">Upload</a>';
     }
 }
