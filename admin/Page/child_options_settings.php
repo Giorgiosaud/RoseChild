@@ -22,7 +22,7 @@ class MySettingsPage
     public function add_child_theme_page()
     {
         // This page will be under "Settings"
-        add_options_page( 'Child Theme Options', 'Child Theme Options', 'edit_theme_options', 'options_child', array($this,'create_child_page'));
+        add_menu_page( 'Child Theme Options', 'Child Theme Options', 'edit_theme_options', 'options_child', array($this,'create_child_page'));
 
         if(function_exists( 'wp_enqueue_media' )&& isset($_GET['page'])&&($_GET['page'] ==='options_child')){
           wp_enqueue_media();
