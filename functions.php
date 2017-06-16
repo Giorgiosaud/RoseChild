@@ -1,8 +1,9 @@
 <?php
 define('CHILD_THEME_DIR', get_stylesheet_directory());
+echo CHILD_THEME_DIR;
 define('CHILD_ADMIN_DIR', CHILD_THEME_DIR . '/admin');
 define('CHILD_THEME_URI', get_stylesheet_directory_uri());
-require_once CHILD_ADMIN_DIR.'/initialize.php';
+// require_once CHILD_ADMIN_DIR.'/initialize.php';
 
 function my_theme_enqueue_styles() {
     $parent_style = 'parent-style'; // This is 'twentyfifteen-style' for the Twenty Fifteen theme.
