@@ -1,6 +1,7 @@
-$image: <?php echo get_option( 'redcolour', '#c00' ); ?>;
+<?php $optionsChild=get_option('child_theme') ?>
+
+$imagen: <?php $imagen=wp_get_attachment_image($optionsChild['logo_cargador'],'full',false,array('class'=>'img-responsive logo-fixed on-pc'));echo $imagen; ?>;
 
 .theme{
-	color:lighten(red,20%);
-	background-image:url($image);
+	background-image:url($imagen);
 }
