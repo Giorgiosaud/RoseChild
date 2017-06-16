@@ -146,8 +146,8 @@ class MySettingsPage
     	// echo '<p><strong>Header Logo Image URL:</strong><br />';
     	echo $imagen;
     	if($imagen='')
-    		echo '<img class="imagen_element imagen_upload" src="" />';
-    	printf('<a href="#" class="imagen_upload" data-input-selector=".logo_cargador_url" data-image-selector=".imagen_upload"><input class="logo_cargador_url" type="text" name="child_theme[logo_cargador]" value="%s"></a>', $logoCargador);
+    		echo '<a href="#" class="imagen_upload" data-input-selector=".logo_cargador_url" data-image-selector=".imagen_upload"><img class="imagen_element imagen_upload" src="" /></a>';
+    	printf('<input class="logo_cargador_url" type="hidden" name="child_theme[logo_cargador]" value="%s">', $logoCargador);
     	// echo '<a href="#" class="imagen_upload" data-input-selector=".logo_cargador_url" data-image-selector=".imagen_upload">Upload</a>';
     }
 }
