@@ -67,6 +67,7 @@ switch (strtolower($_SERVER['HTTP_X_GITHUB_EVENT'])) {
 
 	case 'push':
 		exec('git pull');
+		print_r($payload); # For debug only. Can be found in GitHub hook log.
 		break;
 
 		//  case 'create':
