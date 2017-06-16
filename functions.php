@@ -20,13 +20,14 @@ function my_theme_enqueue_styles() {
     wp_localize_script( 'rose-functions', 'rose_ajax', array(
         'ajaxurl' => esc_url(admin_url( 'admin-ajax.php' 
           ) ) ) );
-}
-// enqueue a .less style sheet
-if ( ! is_admin() )
     wp_enqueue_style( 'style', get_stylesheet_directory_uri() . '/scss/style.scss' );
-else
+    
+}
+      add_action( 'admin_enqueue_scripts', 'load_admin_style' );
+function load_admin_style(){
     wp_enqueue_style( 'admin', get_stylesheet_directory_uri() . '/scss/admin.scss.php' );
 
+}
 // you can also use .less files as mce editor style sheets
 add_editor_style( 'editor-style.sass' );
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
