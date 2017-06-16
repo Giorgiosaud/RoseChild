@@ -1,4 +1,4 @@
-$imagen: "<?php echo wp_get_attachment_image(get_option('child_theme','logo_cargador'),'full',false,array()); ?>";
+$imagen: "https://digitalprintpublicidad.com/site/wp-content/uploads/2017/05/@114.jpg";
 
 .theme{
 	background-image:url($imagen);
