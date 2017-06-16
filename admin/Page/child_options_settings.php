@@ -121,10 +121,10 @@ class MySettingsPage
     public function sanitize( $input )
     {
     	$new_input = array();
-    	if( isset( $input['imagen_top_id'] ) )
-    		$new_input['imagen_top_id'] =  absint($input['imagen_top_id']);
-    	if( isset( $input['imagen_on_scroll_id'] ) )
-    		$new_input['imagen_on_scroll_id'] =  absint($input['imagen_on_scroll_id']);
+    	if( isset( $input['logo_cargador'] ) )
+    		$new_input['logo_cargador'] =  absint($input['logo_cargador']);
+    	// if( isset( $input['imagen_on_scroll_id'] ) )
+    		// $new_input['imagen_on_scroll_id'] =  absint($input['imagen_on_scroll_id']);
 
     	return $new_input;
     }
