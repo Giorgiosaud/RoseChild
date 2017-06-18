@@ -13,7 +13,7 @@ class MySettingsPage
     {
     	add_action( 'admin_menu', array( $this, 'add_child_theme_page' ) );
     	add_action( 'admin_init', array( $this, 'page_init' ) );
-        add_action('script_options_childs',array($this,'script_options'));
+      add_action('script_options_childs',array($this,'script_options'));
     }
 
     /**
@@ -22,17 +22,17 @@ class MySettingsPage
     public function add_child_theme_page()
     {
         // This page will be under "Settings"
-        add_menu_page( 'Child Theme Options', 'Child Theme Options', 'edit_theme_options', 'options_child', array($this,'create_child_page'));
+      add_menu_page( 'Child Theme Options', 'Child Theme Options', 'edit_theme_options', 'options_child', array($this,'create_child_page'));
 
-        if(function_exists( 'wp_enqueue_media' )&& isset($_GET['page'])&&($_GET['page'] ==='options_child')){
-          wp_enqueue_media();
+      if(function_exists( 'wp_enqueue_media' )&& isset($_GET['page'])&&($_GET['page'] ==='options_child')){
+        wp_enqueue_media();
       }else{
-          wp_enqueue_style('thickbox');
-          wp_enqueue_script('media-upload');
-          wp_enqueue_script('thickbox');
+        wp_enqueue_style('thickbox');
+        wp_enqueue_script('media-upload');
+        wp_enqueue_script('thickbox');
       }
 
-  }
+    }
 
     /**
      * Options page callback
@@ -49,47 +49,47 @@ class MySettingsPage
                 // This prints out all hidden setting fields
     			settings_fields( 'child_theme_group' );
     			do_settings_sections( 'options_child' );
-                do_action('script_options_childs');
-                submit_button();
-                ?>
-            </form>
-        </div>
-        <?php
+          do_action('script_options_childs');
+          submit_button();
+          ?>
+        </form>
+      </div>
+      <?php
     }
     public function script_options(){
-        ?>
-        <style type="text/css">
-            .imagen_element{
-                width:300px;
-                height:auto;
-            }
-        </style>
-        <script>
-          jQuery(document).ready(function($) {
-             $('.imagen_upload').click(function(e) {
-                e.preventDefault();
-                var	este=$(this),
-                input=este.data('input-selector'),
-                image=este.data('image-selector');
-                var custom_uploader = wp.media({
-                   title: 'Custom Image',
-                   button: {
-                      text: 'Upload Image'
-                  },
+      ?>
+      <style type="text/css">
+        .imagen_element{
+          width:300px;
+          height:auto;
+        }
+      </style>
+      <script>
+        jQuery(document).ready(function($) {
+         $('.imagen_upload').click(function(e) {
+          e.preventDefault();
+          var	este=$(this),
+          input=este.data('input-selector'),
+          image=este.data('image-selector');
+          var custom_uploader = wp.media({
+           title: 'Custom Image',
+           button: {
+            text: 'Upload Image'
+          },
                 multiple: false  // Set this to true to allow multiple files to be selected
-            })
-                .on('select', function() {
-                   var attachment = custom_uploader.state().get('selection').first().toJSON();
-                   $(image).attr('src', attachment.url);
-                   $(input).val(attachment.id);
+              })
+          .on('select', function() {
+           var attachment = custom_uploader.state().get('selection').first().toJSON();
+           $(image).attr('src', attachment.url);
+           $(input).val(attachment.id);
 
-               })
-                .open();
-            });
-         });
+         })
+          .open();
+        });
+       });
      </script>
      <?php
- }
+   }
 
     /**
      * Register and add settings
@@ -130,7 +130,7 @@ class MySettingsPage
             'options_child', // Page
             'logo_options' // Section           
             );
-    	
+      
     }
 
     /**
@@ -150,7 +150,7 @@ class MySettingsPage
     	// if( isset( $input['imagen_on_scroll_id'] ) )
     		// $new_input['imagen_on_scroll_id'] =  absint($input['imagen_on_scroll_id']);
 
-    	return $new_input;
+      return $new_input;
     }
 
     /** 
@@ -174,8 +174,7 @@ class MySettingsPage
     	printf('<input class="logo_cargador_url" type="hidden" name="child_theme[logo_cargador]" value="%s">', $logoCargador);
     	echo '<a href="#" class="page-title-action aria-button-if-js imagen_upload" data-input-selector=".logo_cargador_url" data-image-selector=".imagen_upload">Upload</a>';
     }
-}
- public function logo_dark_child_callback(){
+    public function logo_dark_child_callback(){
       $logoCargador=isset( $this->options['logo_dark_child'] ) ? esc_attr( $this->options['logo_dark_child']) : '';
       $imagen=wp_get_attachment_image( $logoCargador ,null,true,array("class"=>"imagen_upload"));
       // echo '<p><strong>Header Logo Image URL:</strong><br />';
@@ -185,8 +184,7 @@ class MySettingsPage
       printf('<input class="logo_dark_child_url" type="hidden" name="child_theme[logo_dark_child]" value="%s">', $logoCargador);
       echo '<a href="#" class="page-title-action aria-button-if-js imagen_upload" data-input-selector=".logo_dark_child_url" data-image-selector=".imagen_upload">Upload</a>';
     }
-}
-public function logo_light_child_callback(){
+    public function logo_light_child_callback(){
       $logoCargador=isset( $this->options['logo_light_child'] ) ? esc_attr( $this->options['logo_light_child']) : '';
       $imagen=wp_get_attachment_image( $logoCargador ,null,true,array("class"=>"imagen_upload"));
       // echo '<p><strong>Header Logo Image URL:</strong><br />';
@@ -196,7 +194,7 @@ public function logo_light_child_callback(){
       printf('<input class="logo_light_child_url" type="hidden" name="child_theme[logo_light_child]" value="%s">', $logoCargador);
       echo '<a href="#" class="page-title-action aria-button-if-js imagen_upload" data-input-selector=".logo_light_child_url" data-image-selector=".imagen_upload">Upload</a>';
     }
-}
+  }
 
-if( is_admin() )
-	$my_settings_page = new MySettingsPage();
+  if( is_admin() )
+   $my_settings_page = new MySettingsPage();
