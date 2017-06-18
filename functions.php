@@ -16,6 +16,7 @@ function my_theme_enqueue_styles() {
     wp_enqueue_style('child-fix-theme',
        get_stylesheet_directory_uri().'/assets/css/style.css');
     wp_dequeue_script('rose-functions');
+    wp_dequeue_style('rose-style');
     wp_register_script( 'rose-functions', get_stylesheet_directory_uri() .'/assets/js/functions.js', array('jquery'), false, true );
     wp_localize_script( 'rose-functions', 'rose_ajax', array(
         'ajaxurl' => esc_url(admin_url( 'admin-ajax.php' 
