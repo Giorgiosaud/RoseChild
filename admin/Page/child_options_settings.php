@@ -71,6 +71,8 @@ class MySettingsPage
           var	este=$(this),
           input=este.data('input-selector'),
           image=este.data('image-selector');
+          console.info(image);
+          console.info(input);
           var custom_uploader = wp.media({
            title: 'Custom Image',
            button: {
@@ -175,13 +177,13 @@ class MySettingsPage
     	echo '<a href="#" class="page-title-action aria-button-if-js imagen_upload" data-input-selector=".logo_cargador_url" data-image-selector=".imagen_loader">Upload</a>';
     }
     public function logo_dark_child_callback(){
-      $logoCargador=isset( $this->options['logo_dark_child'] ) ? esc_attr( $this->options['logo_dark_child']) : '';
-      $imagen=wp_get_attachment_image( $logoCargador ,null,true,array("class"=>"imagen_upload"));
+      $logoDark=isset( $this->options['logo_dark_child'] ) ? esc_attr( $this->options['logo_dark_child']) : '';
+      $imagen=wp_get_attachment_image( $logoDark ,null,true,array("class"=>"imagen_upload"));
       // echo '<p><strong>Header Logo Image URL:</strong><br />';
       echo $imagen;
       if($imagen='')
         echo '<img class="imagen_element imagen_upload imagen_dark" src="" />';
-      printf('<input class="logo_dark_child_url" type="hidden" name="child_theme[logo_dark_child]" value="%s">', $logoCargador);
+      printf('<input class="logo_dark_child_url" type="hidden" name="child_theme[logo_dark_child]" value="%s">', $logoDark);
       echo '<a href="#" class="page-title-action aria-button-if-js imagen_upload" data-input-selector=".logo_dark_child_url" data-image-selector=".imagen_dark">Upload</a>';
     }
     public function logo_light_child_callback(){
