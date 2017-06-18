@@ -13,11 +13,11 @@ div#status:before{
 }
 
 .logo{
-	background-image:url( $logo );
+	background-image:url( $LogoDarkChild );
 }
 .black-header .logo,header.transparent .logo{
 
-	background-image:url( ". $logo_light ." );
+	background-image:url( $LogoLightChild );
 }
 #status,
 .arrw-prev:hover a,
