@@ -8,9 +8,9 @@ $main_color: "<?php echo rose_get_option('main-color','#ff3878');?>"
 div#status:before{
 	background-image:url( $LogoLoader );
 }
-.black-header .logo, header.transparent .logo{
-	background-image: url( $LogoDarkChild ) !important;
-}
+// .black-header .logo, header.transparent .logo{
+	// background-image: url( $LogoDarkChild ) !important;
+// }
 
 .logo{
 	background-image:url( $LogoDarkChild );
