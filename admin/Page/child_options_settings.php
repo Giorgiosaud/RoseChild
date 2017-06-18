@@ -116,6 +116,20 @@ class MySettingsPage
             'options_child', // Page
             'logo_options' // Section           
             );
+      add_settings_field(
+            'logo_dark_child', // ID
+            'Logo Dark Child', // Title 
+            array( $this, 'logo_dark_child_callback' ), // Callback
+            'options_child', // Page
+            'logo_options' // Section           
+            );
+      add_settings_field(
+            'logo_light_child', // ID
+            'Logo Light Child', // Title 
+            array( $this, 'logo_light_child_callback' ), // Callback
+            'options_child', // Page
+            'logo_options' // Section           
+            );
     	
     }
 
@@ -129,6 +143,10 @@ class MySettingsPage
     	$new_input = array();
     	if( isset( $input['logo_cargador'] ) )
     		$new_input['logo_cargador'] =  absint($input['logo_cargador']);
+      if( isset( $input['logo_dark_child'] ) )
+        $new_input['logo_dark_child'] =  absint($input['logo_dark_child']);
+      if( isset( $input['logo_light_child'] ) )
+        $new_input['logo_light_child'] =  absint($input['logo_light_child']);
     	// if( isset( $input['imagen_on_scroll_id'] ) )
     		// $new_input['imagen_on_scroll_id'] =  absint($input['imagen_on_scroll_id']);
 
@@ -155,6 +173,28 @@ class MySettingsPage
     		echo '<img class="imagen_element imagen_upload" src="" />';
     	printf('<input class="logo_cargador_url" type="hidden" name="child_theme[logo_cargador]" value="%s">', $logoCargador);
     	echo '<a href="#" class="page-title-action aria-button-if-js imagen_upload" data-input-selector=".logo_cargador_url" data-image-selector=".imagen_upload">Upload</a>';
+    }
+}
+ public function logo_dark_child_callback(){
+      $logoCargador=isset( $this->options['logo_dark_child'] ) ? esc_attr( $this->options['logo_dark_child']) : '';
+      $imagen=wp_get_attachment_image( $logoCargador ,null,true,array("class"=>"imagen_upload"));
+      // echo '<p><strong>Header Logo Image URL:</strong><br />';
+      echo $imagen;
+      if($imagen='')
+        echo '<img class="imagen_element imagen_upload" src="" />';
+      printf('<input class="logo_dark_child_url" type="hidden" name="child_theme[logo_dark_child]" value="%s">', $logoCargador);
+      echo '<a href="#" class="page-title-action aria-button-if-js imagen_upload" data-input-selector=".logo_dark_child_url" data-image-selector=".imagen_upload">Upload</a>';
+    }
+}
+public function logo_light_child_callback(){
+      $logoCargador=isset( $this->options['logo_light_child'] ) ? esc_attr( $this->options['logo_light_child']) : '';
+      $imagen=wp_get_attachment_image( $logoCargador ,null,true,array("class"=>"imagen_upload"));
+      // echo '<p><strong>Header Logo Image URL:</strong><br />';
+      echo $imagen;
+      if($imagen='')
+        echo '<img class="imagen_element imagen_upload" src="" />';
+      printf('<input class="logo_light_child_url" type="hidden" name="child_theme[logo_light_child]" value="%s">', $logoCargador);
+      echo '<a href="#" class="page-title-action aria-button-if-js imagen_upload" data-input-selector=".logo_light_child_url" data-image-selector=".imagen_upload">Upload</a>';
     }
 }
 

@@ -8,5 +8,6 @@ div#status:before{
 @media only screen and (max-width: 1024px){
 	header.transparent .logo{
 		background-image: url( $LogoLoader ) !important;
+		width: auto;
 	}
 }
