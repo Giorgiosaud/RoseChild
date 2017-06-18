@@ -130,7 +130,7 @@ class MySettingsPage
             'options_child', // Page
             'logo_options' // Section           
             );
-      
+
     }
 
     /**
@@ -170,9 +170,9 @@ class MySettingsPage
     	// echo '<p><strong>Header Logo Image URL:</strong><br />';
     	echo $imagen;
     	if($imagen='')
-    		echo '<img class="imagen_element imagen_upload" src="" />';
+    		echo '<img class="imagen_element imagen_upload imagen_loader" src="" />';
     	printf('<input class="logo_cargador_url" type="hidden" name="child_theme[logo_cargador]" value="%s">', $logoCargador);
-    	echo '<a href="#" class="page-title-action aria-button-if-js imagen_upload" data-input-selector=".logo_cargador_url" data-image-selector=".imagen_upload">Upload</a>';
+    	echo '<a href="#" class="page-title-action aria-button-if-js imagen_upload" data-input-selector=".logo_cargador_url" data-image-selector=".imagen_loader">Upload</a>';
     }
     public function logo_dark_child_callback(){
       $logoCargador=isset( $this->options['logo_dark_child'] ) ? esc_attr( $this->options['logo_dark_child']) : '';
@@ -180,9 +180,9 @@ class MySettingsPage
       // echo '<p><strong>Header Logo Image URL:</strong><br />';
       echo $imagen;
       if($imagen='')
-        echo '<img class="imagen_element imagen_upload" src="" />';
+        echo '<img class="imagen_element imagen_upload imagen_dark" src="" />';
       printf('<input class="logo_dark_child_url" type="hidden" name="child_theme[logo_dark_child]" value="%s">', $logoCargador);
-      echo '<a href="#" class="page-title-action aria-button-if-js imagen_upload" data-input-selector=".logo_dark_child_url" data-image-selector=".imagen_upload">Upload</a>';
+      echo '<a href="#" class="page-title-action aria-button-if-js imagen_upload" data-input-selector=".logo_dark_child_url" data-image-selector=".imagen_dark">Upload</a>';
     }
     public function logo_light_child_callback(){
       $logoCargador=isset( $this->options['logo_light_child'] ) ? esc_attr( $this->options['logo_light_child']) : '';
@@ -190,9 +190,9 @@ class MySettingsPage
       // echo '<p><strong>Header Logo Image URL:</strong><br />';
       echo $imagen;
       if($imagen='')
-        echo '<img class="imagen_element imagen_upload" src="" />';
+        echo '<img class="imagen_element imagen_upload imagen_light" src="" />';
       printf('<input class="logo_light_child_url" type="hidden" name="child_theme[logo_light_child]" value="%s">', $logoCargador);
-      echo '<a href="#" class="page-title-action aria-button-if-js imagen_upload" data-input-selector=".logo_light_child_url" data-image-selector=".imagen_upload">Upload</a>';
+      echo '<a href="#" class="page-title-action aria-button-if-js imagen_upload" data-input-selector=".logo_light_child_url" data-image-selector=".imagen_light">Upload</a>';
     }
   }
 
