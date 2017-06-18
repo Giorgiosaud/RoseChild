@@ -5,6 +5,9 @@ $LogoLightChild:"<?php echo wp_get_attachment_image_src(get_option('child_theme'
 div#status:before{
 	background-image:url( $LogoLoader );
 }
+.black-header .logo, header.transparent .logo{
+	background-image: url( $LogoDarkChild ) !important;
+}
 @media only screen and (max-width: 1024px){
 	header.transparent .logo{
 		background-image: url( $LogoDarkChild ) !important;
