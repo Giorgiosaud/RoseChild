@@ -9,13 +9,13 @@ div#status:before{
 	background-image:url( $LogoLoader );
 }
 .black-header .logo, header.transparent .logo{
-	background-image: url( $LogoDarkChild ) !important;
+	background-image: url( $LogoLoader );
 }
 #status{
 	padding: 20px;
 	width: 150px;
 	height: 150px;
-	
+
 }
 
 .logo{
