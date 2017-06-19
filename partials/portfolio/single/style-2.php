@@ -1,9 +1,9 @@
 <section class="portfolio portfolio-style-tree" id="portfolio">
     <div class="portfolio-project-container container">
         <div class="portfolio-project-intro">
-            <!-- <div class="ui-excerpt">
-                <?php //the_excerpt();?>
-            </div> -->
+            <div class="ui-excerpt">
+                <?php the_excerpt();?>
+            </div>
             <ul>
                 <?php $client = rose_get_meta( get_the_ID(), 'client') ; if( ! empty($client )):?>
                 <li>

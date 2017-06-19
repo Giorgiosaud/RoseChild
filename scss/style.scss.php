@@ -4,16 +4,23 @@ $LogoLightChild:"<?php echo wp_get_attachment_image_src(get_option('child_theme'
 $border_color: "<?php echo rose_get_object_option('border_box_color');?>";
 $main_color: "<?php echo rose_get_option('main-color','#ff3878');?>";
 <?php echo rose_get_option('custom-css','');?>
-
+    
 div#status:before{
 	background-image:url( $LogoLoader );
 }
-// .black-header .logo, header.transparent .logo{
-	// background-image: url( $LogoDarkChild ) !important;
-// }
+.black-header .logo, header.transparent .logo{
+	background-image: url( $LogoDarkChild ) !important;
+}
+#status{
+	padding: 20px;
+	width: 150px;
+	height: 150px;
+	
+}
 
 .logo{
 	background-image:url( $LogoDarkChild );
+	background-size: contain;	
 }
 .black-header .logo,header.transparent .logo{
 

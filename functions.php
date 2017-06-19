@@ -9,7 +9,8 @@ function remove_parent_action() {
   remove_action( 'wp_enqueue_scripts', 'rose_theme_scripts_styles' ,9);
 }
 function my_theme_enqueue_styles() {
-  global $wp_scripts, $aq_theme_options;
+    wp_dequeue_style('rose-style');
+
   if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
     wp_enqueue_script( 'comment-reply' );
     }

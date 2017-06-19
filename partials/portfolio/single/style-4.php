@@ -2,7 +2,7 @@
     <div class="portfolio-project-container container">
         <div class="portfolio-project-intro col-md-12">
             <div class="ui-excerpt">
-                <?php //the_excerpt();?>
+                <?php the_excerpt();?>
             </div>
              <ul>
                 <?php $client = rose_get_meta( get_the_ID(), 'client') ; if( ! empty($client )):?>
@@ -12,7 +12,7 @@
                 <?php endif;?>
                 <?php if( has_term('', 'portfolio_type', get_the_ID()) ):?>
                 <li>
-                    <span><?php esc_html_e('Categoria : ','digitalp');?></span>
+                    <span><?php esc_html_e('Category : ','rose');?></span>
                     <ul>
                         <?php the_terms( get_the_ID(), 'portfolio_type', '<li>', '</li><li>', '</li>');?>
                     </ul>

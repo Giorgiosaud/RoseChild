@@ -11,8 +11,8 @@
             ?>
             <img src="<?php echo esc_url( $image );?>" alt="<?php esc_html_e('Project Media','rose');?>" class="scale">           
             <?php $i++; endforeach;?>
-        <?php endif;?>
         </div>
+        <?php endif;?>
         <div class="portfolio-project-details col-md-3">
             <div class="ui-excerpt">
                 <?php the_excerpt();?>
@@ -48,17 +48,17 @@
                 </li>
                 <?php endif;?>
             </ul>
-        </div><!-- PROJECT DETAILS -->
             <?php $content = get_the_content(); if( ! empty( $content ) ):?>
                 <div class="clearfix portfolio-content">
                     <?php the_content(); ?>
                 </div>
             <?php endif;?>
+        </div><!-- PROJECT DETAILS -->
         <div class="post-nav-ctrl col-md-12">
             <span class="return"><a href=""><i class="icon-ccw"></i></a></span>
             <?php
 
-                $previous = get_previous_post_link( '<span class="arrw-prev">%link</span>', wp_kses(  '<i class="icon-arrow-left4"></i>' ,array( 'span' => array( 'class' => array() ), 'i' => array( 'class' => array() ))) );
+                $previous = get_previous_post_link( '<span class="arrw-prev">%link</span>', wp_kses(  '<i class="icon-arrow-left4"></i>' ),array( 'span' => array( 'class' => array() ), 'i' => array( 'class' => array() ))) );
                 $next = get_next_post_link('<span class="arrw-next">%link</span>',     wp_kses( '<i class="icon-arrow-right4">',array( 'span' => array( 'class' => array() ), 'i' => array( 'class' => array() ))) );
                 if( $previous ){
                     echo $previous;
