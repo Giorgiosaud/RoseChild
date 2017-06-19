@@ -10,7 +10,7 @@ div#status:before {
     display:flex;
     justify-content:center;
     align-content:center;
-    background-image:url('https://digitalprintpublicidad.com/site/wp-content/uploads/2017/05/@114.jpg');
+    // background-image:url('https://digitalprintpublicidad.com/site/wp-content/uploads/2017/05/@114.jpg');
     z-index:10000;
     height:100%;
     width:100%;
