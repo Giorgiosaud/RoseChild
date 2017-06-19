@@ -83,10 +83,10 @@ a.m-btn,
 .woocommerce #review_form #respond .form-submit input,
 .ui-custom-accordion.vc_tta-color-white.vc_tta-style-flat .vc_tta-panel.vc_active .vc_tta-panel-heading,
 .ui-custom-accordion.vc_tta-color-white.vc_tta-style-flat .vc_tta-panel.vc_active .vc_tta-panel-heading:hover{
-	background-color: {$main_color};
+	background-color: $main_color;
 }
 .ui-nav-tabs.vc_tta-color-grey.vc_tta-style-classic .vc_tta-tab.vc_active>a{
-	background-color: {$main_color}!important;
+	background-color: $main_color!important;
 }
 .close-modal,
 .counter-item-default,
@@ -113,7 +113,7 @@ a:hover,
 .m-tabs-icon .m-tab-nav li.ui-state-active a,.woo-widget .woocommerce-Price-amount,.search-modal-wrap .search .search-submit,
 .woocommerce .woocommerce-breadcrumb a:hover,
 .woo-pagenation a:hover,.ui-nav-tabs.vc_tta.vc_tta-style-classic .vc_tta-tab>a{
-	color: {$main_color};
+	color: $main_color;
 }
 
 .cart .cancel:hover,
