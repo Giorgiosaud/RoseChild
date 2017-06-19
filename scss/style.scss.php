@@ -23,7 +23,10 @@ div#status:before{
 .black-header .logo,header.transparent .logo{
 	background-image:url( $LogoLightChild );
 }
-#status, .arrw-prev:hover a, .arrw-next:hover a, .return:hover a, .default-bg,
+#status, .arrw-prev:hover a, 
+.arrw-next:hover a,
+.return:hover a,
+.default-bg,
 .button,
 .back-to-top,
 .see-full,
@@ -130,7 +133,7 @@ a:hover,
 .pagination li span.current,
 .ui-nav-tabs.vc_tta.vc_tta-style-classic .vc_tta-tab>a,
 .ui-nav-tabs.vc_tta-color-grey.vc_tta-style-classic .vc_tta-tab.vc_active>a{
-	border-color: {$main_color};
+	border-color: $main_color;
 }
 .border-body .border-box-style{
 	background-color: $border_color;
