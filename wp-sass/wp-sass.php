@@ -139,9 +139,9 @@ class wp_sass {
 	public function __parse( $file, $syntax, $style = 'nested', $load_path = array() ) {
 		$options = array(
 			'style' => $style,
-			'cache' => FALSE,
+			'cache' => TRUE,
 			'syntax' => $syntax,
-			'debug' => FALSE,
+			'debug' => TRUE,
 			'callbacks' => array(
 				'warn' => array( $this, 'cb_warn' ),
 				'debug' => array( $this, 'cb_debug' ),
