@@ -141,7 +141,7 @@ class wp_sass {
 			'style' => $style,
 			'cache' => TRUE,
 			'syntax' => $syntax,
-			'debug' => TRUE,
+			'debug' => FALSE,
 			'callbacks' => array(
 				'warn' => array( $this, 'cb_warn' ),
 				'debug' => array( $this, 'cb_debug' ),
