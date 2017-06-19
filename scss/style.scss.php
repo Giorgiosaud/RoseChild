@@ -133,7 +133,7 @@ a:hover,
 .pagination li span.current,
 .ui-nav-tabs.vc_tta.vc_tta-style-classic .vc_tta-tab>a,
 .ui-nav-tabs.vc_tta-color-grey.vc_tta-style-classic .vc_tta-tab.vc_active>a{
-	border-color: $main_color;
+	border-color: {$main_color};
 }
 .border-body .border-box-style{
 	background-color: $border_color;
