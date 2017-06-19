@@ -16,7 +16,7 @@ div#status:before{
 	height: 150px;
 
 }
-.logo{
+header.transparent .logo{
 	background-image:url( $LogoDarkChild );
 	background-size: contain;	
 }
