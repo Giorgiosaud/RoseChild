@@ -18,7 +18,8 @@ function my_theme_enqueue_styles() {
   wp_enqueue_style('animate', get_template_directory_uri() .'/assets/css/animate.css' );
   wp_enqueue_style('simpletextrotator', get_template_directory_uri() .'/assets/css/simpletextrotator.css' );
   wp_enqueue_style('rose-javascript', get_template_directory_uri() .'/assets/css/javascript.css' );
-  wp_enqueue_style('rose-main', get_stylesheet_directory_uri() .'/assets/css/style.css' );
+  wp_enqueue_style('rose-fonts',get_template_directory_uri().'/assets/css/fonts.css');
+  wp_enqueue_style('rose-main', get_stylesheet_directory_uri() .'/assets/css/style.css' ,array('rose-fonts'));
   wp_enqueue_style('rose-responsive', get_template_directory_uri() .'/assets/css/responsive.css' );
     // wp_enqueue_style('rose-style', get_stylesheet_uri() );
     $parent_style = 'rose-style'; // This is 'twentyfifteen-style' for the Twenty Fifteen theme.
