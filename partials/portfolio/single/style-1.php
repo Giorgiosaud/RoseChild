@@ -65,14 +65,14 @@
                     echo $previous;
                 }else{
                     ?>
-                    <span class="arrw-prev"><a href=""><i class="icon-arrow-left4"></i></a></span>
+                    <!-- <span class="arrw-prev"><a href=""><i class="icon-arrow-left4"></i></a></span> -->
                     <?php
                 }
                 if( $next ){
                     echo $next;
                 }else{
                     ?>
-                    <span class="arrw-next"><a href=""><i class="icon-arrow-right4"></i></a></span>
+                    <!-- <span class="arrw-next"><a href=""><i class="icon-arrow-right4"></i></a></span> -->
                     <?php
                 }
 
