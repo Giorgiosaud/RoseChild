@@ -11,7 +11,7 @@ function remove_parent_action() {
 function enable_comments_custom_post_type() {
   add_post_type_support( 'portfolio', 'comments' );
 }
-add_action( 'init', 'enable_comments_custom_post_type', 9 );
+add_action( 'init', 'enable_comments_custom_post_type', 11);
 
 function my_theme_enqueue_styles() {
   wp_dequeue_style('rose-style');
