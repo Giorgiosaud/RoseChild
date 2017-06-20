@@ -23,6 +23,9 @@ div#status:before{
     justify-content: space-between;
     padding: 5px 0;
 }
+header{
+	height: auto;
+}
 #status{
 	padding: 20px;
 	width: 150px;
