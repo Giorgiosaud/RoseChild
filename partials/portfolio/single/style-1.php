@@ -56,31 +56,31 @@
             <?php endif;?>
         </div><!-- PROJECT DETAILS -->
         <div class="col-md-12">
-            <?php echo do_shortcode('[fbcomments url="" width="100%" count="on" title="FacebookComments" num="10" scheme="light" countmsg="wonderful comments!"]'); ?>
+            <?php echo do_shortcode('[fbcomments url="" width="100%" count="on" title="Comentarios" num="10" scheme="light" countmsg="Maravillosos Comentarios!"]'); ?>
         </div>
-        <div class="post-nav-ctrl col-md-12">
+        <!-- <div class="post-nav-ctrl col-md-12">
             <span class="return"><a href=""><i class="icon-ccw"></i></a></span>
             <?php
 
-                $previous = get_previous_post_link( '<span class="arrw-prev">%link</span>', wp_kses(  '<i class="icon-arrow-left4"></i>' ,array( 'span' => array( 'class' => array() ), 'i' => array( 'class' => array() ))) );
-                $next = get_next_post_link('<span class="arrw-next">%link</span>',     wp_kses( '<i class="icon-arrow-right4"></i>',array( 'span' => array( 'class' => array() ), 'i' => array( 'class' => array() ))) );
-                if( $previous ){
-                    echo $previous;
-                }else{
+                //$previous = get_previous_post_link( '<span class="arrw-prev">%link</span>', wp_kses(  '<i class="icon-arrow-left4"></i>' ,array( 'span' => array( 'class' => array() ), 'i' => array( 'class' => array() ))) );
+                //$next = get_next_post_link('<span class="arrw-next">%link</span>',     wp_kses( '<i class="icon-arrow-right4"></i>',array( 'span' => array( 'class' => array() ), 'i' => array( 'class' => array() ))) );
+                //if( $previous ){
+                  //  echo $previous;
+                //}else{
                     ?>
                     <span class="arrw-prev"><a href=""><i class="icon-arrow-left4"></i></a></span>
                     <?php
                 }
-                if( $next ){
-                    echo $next;
-                }else{
+                //if( $next ){
+                 //   echo $next;
+               // }else{
                     ?>
                     <span class="arrw-next"><a href=""><i class="icon-arrow-right4"></i></a></span>
                     <?php
                 }
 
              ?>
-        </div>
+        </div> -->
     </div>
 </section>
 
