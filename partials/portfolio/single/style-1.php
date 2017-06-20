@@ -58,7 +58,7 @@
             <span class="return"><a href=""><i class="icon-ccw"></i></a></span>
             <?php
 
-                $previous = get_previous_post_link('<span class="arrw-prev">%link</span>',     wp_kses( '<i class="icon-arrow-left4">',array( 'span' => array( 'class' => array() ), 'i' => array( 'class' => array() ))));
+                $previous = get_previous_post_link('<span class="arrw-next">%link</span>',wp_kses( '<i class="icon-arrow-left4">',array( 'span' => array( 'class' => array() ), 'i' => array( 'class' => array() ))));
 
                 $next = get_next_post_link('<span class="arrw-next">%link</span>',     wp_kses( '<i class="icon-arrow-right4">',array( 'span' => array( 'class' => array() ), 'i' => array( 'class' => array() ))));
                 if( $previous ){
