@@ -7,12 +7,8 @@ $main_color: "<?php echo rose_get_option('main-color','#ff3878');?>";
 div#status:before{
 	background-image:url( $LogoLoader );
 }
-.black-header .logo, header.transparent .logo{
+.logo, header.transparent .logo{
 	background: url( $LogoLoader );
-	background-size: contain;
-}
-header.transparent .logo{
-	background:url( $LogoDarkChild );
 	background-size: contain;
 }
 
