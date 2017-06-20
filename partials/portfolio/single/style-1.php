@@ -56,7 +56,7 @@
             <?php endif;?>
         </div><!-- PROJECT DETAILS -->
         <div class="col-md-12">
-            <?php echo do_shortcode('[fbcomments url="" width="100%" count="on" title="Comentarios" num="10" scheme="light" countmsg="Maravillosos Com!"]'); ?>
+            <?php echo do_shortcode('[fbcomments url="" width="100%" count="on" title="Comentarios" num="10" scheme="light" countmsg="Maravillosos Comentarios!"]'); ?>
         </div>
     </div>
 </section>
