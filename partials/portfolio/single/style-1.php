@@ -80,6 +80,7 @@
         </div>
     </div>
 </section>
+<h1>Comentarios</h1>
 <?php comments_template();?>
 <!-- *********************
     LINK SECTION
