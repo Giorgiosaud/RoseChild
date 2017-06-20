@@ -56,7 +56,7 @@
             <?php endif;?>
         </div><!-- PROJECT DETAILS -->
         <div class="col-md-12">
-            <?php echo do_shortcode('[fbcomments url="http://peadig.com/wordpress-plugins/facebook-comments/" width="375" count="off" num="3" countmsg="wonderful comments!"]'); ?>
+            <?php echo do_shortcode('[fbcomments url="" width="100%" count="on" title="FacebookComments" num="10" scheme="light" countmsg="wonderful comments!"]'); ?>
         </div>
         <div class="post-nav-ctrl col-md-12">
             <span class="return"><a href=""><i class="icon-ccw"></i></a></span>
