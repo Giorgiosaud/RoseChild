@@ -15,6 +15,7 @@
         <?php endif;?>
         <div class="portfolio-project-details col-md-3">
             <div class="ui-excerpt">
+                <?php var_dump(comments_open()); ?>
                 <?php the_excerpt();?>
             </div>
             <!-- Project info details -->
