@@ -2,7 +2,7 @@ $LogoLoader:"<?php echo wp_get_attachment_image_src(get_option('child_theme')['l
 $LogoDarkChild:"<?php echo wp_get_attachment_image_src(get_option('child_theme')['logo_dark_child'],'full',false)[0]; ?>";
 $LogoLightChild:"<?php echo wp_get_attachment_image_src(get_option('child_theme')['logo_light_child'],'full',false)[0]; ?>";
 $border_color: "<?php echo rose_get_object_option('border_box_color');?>";
-$main_color: "<?php echo rose_get_option('main-color','#ff3878');?>";
+$main_color: <?php echo rose_get_option('main-color','#ff3878');?>;
 <?php echo rose_get_option('custom-css','');?>
 div#status:before{
 	background-image:url( $LogoLoader );
