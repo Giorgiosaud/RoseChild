@@ -9,9 +9,9 @@ function remove_parent_action() {
   remove_action( 'wp_enqueue_scripts', 'rose_theme_scripts_styles' ,9);
 }
 function enable_comments_custom_post_type() {
- add_post_type_support( 'portfolio', 'comments' );
+  add_post_type_support( 'portfolio', 'comments' );
 }
-add_action( 'init', 'enable_comments_custom_post_type', 11 );
+add_action( 'init', 'enable_comments_custom_post_type', 9 );
 
 function my_theme_enqueue_styles() {
   wp_dequeue_style('rose-style');
