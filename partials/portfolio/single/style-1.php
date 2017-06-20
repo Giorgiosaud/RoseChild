@@ -59,7 +59,7 @@
             <?php
 
                 $previous = get_previous_post_link( '<span class="arrw-prev">%link</span>', wp_kses(  '<i class="icon-arrow-left4"></i>' ,array( 'span' => array( 'class' => array() ), 'i' => array( 'class' => array() ))) );
-                $next = get_next_post_link('<span class="arrw-next">%link</span>',     wp_kses( '<i class="icon-arrow-right4">',array( 'span' => array( 'class' => array() ), 'i' => array( 'class' => array() ))) );
+                $next = get_next_post_link('<span class="arrw-next">%link</span>',     wp_kses( '<i class="icon-arrow-right4"></i>',array( 'span' => array( 'class' => array() ), 'i' => array( 'class' => array() ))) );
                 if( $previous ){
                     echo $previous;
                 }else{
