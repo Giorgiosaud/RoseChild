@@ -17,7 +17,12 @@ div#status:before{
     border-radius: 9em;
     text-align: center
 }
-
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+}
 #status{
 	padding: 20px;
 	width: 150px;
