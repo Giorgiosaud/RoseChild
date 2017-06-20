@@ -10,6 +10,9 @@ div#status:before{
 header.transparent .logo{
 	background: url( $LogoLoader );
 }
+.logo{
+	background: url( $LogoDarkChild );	
+}
 header.transparent .logo,.logo{
 	background-repeat:no-repeat;
     background-size: 70%;
