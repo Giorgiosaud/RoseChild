@@ -8,7 +8,7 @@ div#status:before{
 	background-image:url( $LogoLoader );
 }
 .black-header .logo, header.transparent .logo{
-	background-image: url( $LogoLoader );
+	background: url( $LogoLoader ) contain;
 }
 #status{
 	padding: 20px;
@@ -17,11 +17,10 @@ div#status:before{
 
 }
 header.transparent .logo{
-	background-image:url( $LogoDarkChild );
-	background-size: contain;	
+	background:url( $LogoDarkChild ) contain;
 }
 .black-header .logo,header.transparent .logo{
-	background-image:url( $LogoLightChild );
+	background-image:url( $LogoLightChild ) contain;
 }
 #status, .arrw-prev:hover a, 
 .arrw-next:hover a,
