@@ -16,7 +16,8 @@ header.transparent .logo,.logo{
     height: 70px;
     width: 70px;
     border-radius: 9em;
-    text-align: center
+    text-align: center;
+    transition: all 2s;
 }
 header.transparent .logo{
 	background-image: url( $LogoLoader );
