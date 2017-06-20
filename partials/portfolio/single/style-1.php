@@ -78,11 +78,6 @@
              ?>
         </div>
     </div>
-    <php
-        if(  comments_open() ){
-            comments_template();
-        }
-    ?>
 </section>
 <!-- *********************
     LINK SECTION
