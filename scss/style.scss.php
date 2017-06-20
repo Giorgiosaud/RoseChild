@@ -165,6 +165,10 @@ a:hover,
 .socicon-whatsapp{
 	color:#20B038;
 }
+
+.socicon-facebook{
+	color:#3e5b98
+}
 @media only screen and (max-width: 1024px){
 	header.transparent .logo{
 		background-image: url( $LogoDarkChild ) !important;
