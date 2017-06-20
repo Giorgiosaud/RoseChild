@@ -9,9 +9,13 @@ div#status:before{
 }
 .logo, header.transparent .logo{
 	background: url( $LogoLoader ) no-repeat;
-	background-size: contain;
-	background-position: center;
-
+    background-size: 70%;
+    background-position: center;
+    background-color: $main-color;
+    height: 70px;
+    width: 70px;
+    border-radius: 9em;
+    text-align: center
 }
 
 #status{
