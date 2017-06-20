@@ -8,10 +8,10 @@ div#status:before{
 	background-image:url( $LogoLoader );
 }
 header.transparent .logo{
-	background: url( $LogoLoader );
+	background-image: url( $LogoLoader );
 }
 .logo{
-	background: url( $LogoDarkChild );	
+	background-image: url( $LogoDarkChild );	
 }
 header.transparent .logo,.logo{
 	background-repeat:no-repeat;
