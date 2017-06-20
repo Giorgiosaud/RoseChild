@@ -7,12 +7,7 @@ $main_color: <?php echo rose_get_option('main-color','#ff3878');?>;
 div#status:before{
 	background-image:url( $LogoLoader );
 }
-header.transparent .logo{
-	background-image: url( $LogoLoader );
-}
-.logo{
-	background-image: url( $LogoDarkChild );	
-}
+
 header.transparent .logo,.logo{
 	background-repeat:no-repeat;
     background-size: 70%;
@@ -22,6 +17,14 @@ header.transparent .logo,.logo{
     width: 70px;
     border-radius: 9em;
     text-align: center
+}
+header.transparent .logo{
+	background-image: url( $LogoLoader );
+	background-color: #49b2d8;
+}
+.logo{
+	background-image: url( $LogoDarkChild );	
+	background-color: #49b2d8;
 }
 .header-container {
     display: flex;
