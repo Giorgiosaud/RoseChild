@@ -162,6 +162,9 @@ a:hover,
 .border-body .border-box-style{
 	background-color: $border_color;
 }
+.socicon-whatsapp{
+	color:#20B038;
+}
 @media only screen and (max-width: 1024px){
 	header.transparent .logo{
 		background-image: url( $LogoDarkChild ) !important;
