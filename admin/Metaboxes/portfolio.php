@@ -1,5 +1,8 @@
 <?php 
+add_action( 'after_setup_theme', 'your_parent_theme_setup', 9 );
+function your_parent_theme_setup() {    
 add_action( 'cmb2_admin_init', 'rose_child_portfolio_metabox' );
+}
 /**
  * Hook in and add a demo metabox. Can only happen on the 'cmb2_init' hook.
  */
