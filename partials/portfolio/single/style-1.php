@@ -12,7 +12,7 @@
             $ext=array_pop($array);
             $extimagenes=['jpg','jpeg','gif','png','svg'];
 
-            if(in_array($extimagenes,$ext)){
+            if(in_array($ext,$extimagenes)){
                 ?>
                 <img src="<?php echo esc_url( $image );?>" alt="<?php esc_html_e('Project Media','rose');?>" class="scale">           
                 <?php
