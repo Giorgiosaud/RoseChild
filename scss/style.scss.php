@@ -8,7 +8,7 @@ div#status:before{
 	background-image:url( $LogoLoader );
 }
 body{
-	cursor: url("https://image.flaticon.com/icons/svg/149/149307.svg"), auto;
+	cursor: url("https://zonapro.us/wp-content/uploads/2017/06/edit.png"), auto;
 }
 header.transparent .logo,.logo{
 	background-repeat:no-repeat;
