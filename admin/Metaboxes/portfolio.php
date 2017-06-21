@@ -57,7 +57,7 @@ function cmb2_sample_metaboxes() {
 	$cmb = new_cmb2_box( array(
 		'id'            => 'test_metabox',
 		'title'         => __( 'Test Metabox', 'cmb2' ),
-		'object_types'  => array( 'portfolio', ), // Post type
+		'object_types'  => array( 'page','portfolio' ), // Post type
 		'context'       => 'normal',
 		'priority'      => 'high',
 		'show_names'    => true, // Show field names on the left
