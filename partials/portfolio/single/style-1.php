@@ -19,7 +19,7 @@
             }
             elseif(in_array($ext,$extvideo)){
                 ?>
-                <video class="scale">
+                <video class="scale" autoplay>
                     <source src ="<?php echo esc_url( $image );?>" alt="<?php esc_html_e('Project Media','rose');?>" />
                     </video>
                     <?php
