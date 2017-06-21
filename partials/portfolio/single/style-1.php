@@ -19,7 +19,7 @@
             }
             elseif(in_array($ext,$extvideo)){
                 ?>
-                <video class="scale video-js" data-setup='{"controls": false, "autoplay": true, "preload": "auto","loop":true}'>
+                <video class="scale video-js" data-setup='{"controls": true, "autoplay": false, "preload": "auto","loop":true}'>
                     <source src ="<?php echo esc_url( $image );?>" alt="<?php esc_html_e('Project Media','rose');?>" />
                     </video>
                     <?php
