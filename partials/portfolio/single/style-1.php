@@ -11,53 +11,60 @@
             $array=explode('.',$image);            
             $ext=array_pop($array);
             $extimagenes=['jpg','jpeg','gif','png','svg'];
-
+            $extvideo=['webm','mp4'];
             if(in_array($ext,$extimagenes)){
                 ?>
                 <img src="<?php echo esc_url( $image );?>" alt="<?php esc_html_e('Project Media','rose');?>" class="scale">           
                 <?php
             }
-            else{
-                echo $ext;
-            }
+            elseif(in_array($ext,$extvideo)){
+                ?>
+                <video class="scale">
+                    <source src ="<?php echo esc_url( $image );?>" alt="<?php esc_html_e('Project Media','rose');?>" />
+                    </video>
+                    <?php
+                }
+                else{
+                    echo $ext;
+                }
 
 
-            ?>
-            
-            <?php $i++; endforeach;?>
-        </div>
-    <?php endif;?>
-    <div class="portfolio-project-details col-md-3">
-        <div class="ui-excerpt">
+                ?>
 
-            <?php the_excerpt();?>
-        </div>
-        <!-- Project info details -->
-        <ul>
-            <?php $client = rose_get_meta( get_the_ID(), 'client') ; if( ! empty($client )):?>
+                <?php $i++; endforeach;?>
+            </div>
+        <?php endif;?>
+        <div class="portfolio-project-details col-md-3">
+            <div class="ui-excerpt">
+
+                <?php the_excerpt();?>
+            </div>
+            <!-- Project info details -->
+            <ul>
+                <?php $client = rose_get_meta( get_the_ID(), 'client') ; if( ! empty($client )):?>
+                <li>
+                    <span><?php esc_html_e('Client :','rose');?></span><?php echo esc_attr( $client );?>
+                </li>
+            <?php endif;?>
+            <?php if( has_term('', 'portfolio_type', get_the_ID()) ):?>
+                <li>
+                    <span><?php esc_html_e('Category : ','rose');?></span>
+                    <ul>
+                        <?php the_terms( get_the_ID(), 'portfolio_type', '<li>', '</li><li>', '</li>');?>
+                    </ul>
+                </li>
+            <?php endif;?>
+            <?php $executive = rose_get_meta( get_the_ID(), 'executive'); if( ! empty( $executive  ) ):?>
             <li>
-                <span><?php esc_html_e('Client :','rose');?></span><?php echo esc_attr( $client );?>
+                <span><?php esc_html_e('Executive : ','rose');?></span><?php echo esc_attr( $executive );?>
             </li>
         <?php endif;?>
-        <?php if( has_term('', 'portfolio_type', get_the_ID()) ):?>
-            <li>
-                <span><?php esc_html_e('Category : ','rose');?></span>
-                <ul>
-                    <?php the_terms( get_the_ID(), 'portfolio_type', '<li>', '</li><li>', '</li>');?>
-                </ul>
-            </li>
-        <?php endif;?>
-        <?php $executive = rose_get_meta( get_the_ID(), 'executive'); if( ! empty( $executive  ) ):?>
+        <?php $url = rose_get_meta( get_the_ID(), 'url' ); if( ! empty( $url  )):?>
         <li>
-            <span><?php esc_html_e('Executive : ','rose');?></span><?php echo esc_attr( $executive );?>
+            <span><?php esc_html_e('Project url : ','rose');?></span><a href="<?php echo esc_url($url);?>"><?php echo esc_attr($url);?></a>
         </li>
     <?php endif;?>
-    <?php $url = rose_get_meta( get_the_ID(), 'url' ); if( ! empty( $url  )):?>
-    <li>
-        <span><?php esc_html_e('Project url : ','rose');?></span><a href="<?php echo esc_url($url);?>"><?php echo esc_attr($url);?></a>
-    </li>
-<?php endif;?>
-<?php $date = rose_get_meta( get_the_ID(), 'date' ); if( ! empty( $date )):?>
+    <?php $date = rose_get_meta( get_the_ID(), 'date' ); if( ! empty( $date )):?>
     <li>
         <span><?php esc_html_e('Date realised : ','rose');?></span><?php echo esc_attr($date);?>
     </li>
