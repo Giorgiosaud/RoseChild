@@ -9,7 +9,8 @@
                 <?php
                 endif;
             ?>
-            <?php echo array_pop(explode('.', $image)); ?>
+            <?php $dost=explode('.', $image);
+            echo array_pop($dots); ?>
             <img src="<?php echo esc_url( $image );?>" alt="<?php esc_html_e('Project Media','rose');?>" class="scale">           
             <?php $i++; endforeach;?>
         </div>
