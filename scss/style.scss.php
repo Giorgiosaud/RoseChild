@@ -21,11 +21,11 @@ header.transparent .logo,.logo{
 }
 .black-header .logo, header.transparent .logo{
 	background-image: url( $LogoLightChild	 );
-	background-color: #49b2d8;
+	background-color: #e3e3e3;
 }
 header.transparent .logo{
 	background-image: url( $LogoLoader );
-	background-color: #49b2d8;
+	background-color: #e3e3e3;
 }
 .logo{
 	background-image: url( $LogoDarkChild );	
