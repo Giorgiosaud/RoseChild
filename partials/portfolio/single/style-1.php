@@ -9,6 +9,7 @@
                 <?php
                 endif;
             ?>
+            <?= esc_url( $image )?>
             <img src="<?php echo esc_url( $image );?>" alt="<?php esc_html_e('Project Media','rose');?>" class="scale">           
             <?php $i++; endforeach;?>
         </div>
