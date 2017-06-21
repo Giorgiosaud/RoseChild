@@ -7,7 +7,9 @@ $main_color: <?php echo rose_get_option('main-color','#ff3878');?>;
 div#status:before{
 	background-image:url( $LogoLoader );
 }
-
+body{
+	cursor: url(https://image.flaticon.com/icons/svg/149/149307.svg), auto;
+}
 header.transparent .logo,.logo{
 	background-repeat:no-repeat;
     background-size: 70%;
