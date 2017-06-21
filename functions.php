@@ -4,6 +4,7 @@ define('CHILD_THEME_DIR', get_stylesheet_directory());
 define('CHILD_ADMIN_DIR', CHILD_THEME_DIR . '/admin');
 require_once CHILD_ADMIN_DIR.'/initialize.php';
 require_once( 'wp-sass/wp-sass.php' );
+
 add_action( 'init', 'remove_parent_action');
 function remove_parent_action() {
   remove_action( 'wp_enqueue_scripts', 'rose_theme_scripts_styles' ,9);
