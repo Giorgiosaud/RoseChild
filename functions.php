@@ -11,6 +11,7 @@ function remove_parent_action() {
 }
 function enable_comments_custom_post_type() {
   add_post_type_support( 'portfolio', 'comments' );
+  remove_action( 'wp_enqueue_scripts', 'rose_theme_scripts_styles' ,9);
 }
 add_action( 'after_setup_theme', 'enable_comments_custom_post_type', 11);
 
