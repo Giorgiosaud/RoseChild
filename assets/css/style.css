@@ -2827,7 +2827,7 @@ ul.product-meta li{
     .logo,
     .white-header .logo{
         /*background: transparent url('../images/logo2@x.png') no-repeat !important;*/
-        background-size: 100% !important;
+        // background-size: 100% !important;
     }
     footer h1.logo-footer{
         background: transparent url('../images/logo2@x.png') no-repeat;
