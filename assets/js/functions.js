@@ -43,7 +43,7 @@ $(window).load(function(){
   }
 });
 $(document).ready(function() {
-  $.videojs($('.video-js'));
+  videojs($('.video-js'));
 
   /* --------------------------------------------
    Platform detect
