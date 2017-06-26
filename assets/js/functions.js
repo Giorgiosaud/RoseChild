@@ -332,7 +332,7 @@ $(window).scroll(function() {
     $('.home-t-h header').addClass("transparent");
     // $('header').addClass("transparent");
     $('.home-t-h-b header').addClass("transparent-dark");
-    if()
+    
   }
   //SELECTED MENU SCROLL --------------------
   if($('body').hasClass('home')){
