@@ -330,7 +330,7 @@ $(window).scroll(function() {
   else{
     $('.home-t-h header').addClass("transparent");
     $('.home-t-h-b header').addClass("transparent-dark");
-    
+
   }
   //SELECTED MENU SCROLL --------------------
   if($('body').hasClass('home')){
@@ -340,6 +340,7 @@ $(window).scroll(function() {
       if(jQuery(window).scrollTop() >= jQuery('#'+currentId).offset().top - 95)
       {
         currentNode = currentId;
+        console.info(currentNode);
       }
     });
     $('.primary-navigation li.menu-item').removeClass('selected').find('a[href="#'+currentNode+'"]').parent().addClass('selected');
