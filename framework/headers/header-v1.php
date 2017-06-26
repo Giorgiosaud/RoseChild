@@ -1,5 +1,5 @@
 <!--********************** HEADER SECTION ************************* -->
-<?php $header_class= apply_filters( 'rose-header-type', array('header-fw'), 'v1' );
+<?php $header_class= apply_filters( 'rose-header-type', array('header-fw','transparent-dark'), 'v1' );
 	$container = rose_get_object_option('header_layout', 'container');
 ?>
 <header class="<?php echo esc_attr( implode(' ', $header_class ) );?>">

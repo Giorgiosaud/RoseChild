@@ -323,14 +323,12 @@ $(window).scroll(function() {
   if ($(document).scrollTop() >= 90){  
     $('.home-t-h header').removeClass("transparent");
     $('.home-t-h-b header').removeClass("transparent-dark");
-    // $('header').removeClass("transparent");
     if($('.home-t-h header').hasClass('white-header')){
       $('.logo').addClass('black-logo');
     }
   } 
   else{
     $('.home-t-h header').addClass("transparent");
-    // $('header').addClass("transparent");
     $('.home-t-h-b header').addClass("transparent-dark");
     
   }
