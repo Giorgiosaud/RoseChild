@@ -7,9 +7,6 @@ $main_color: <?php echo rose_get_option('main-color','#ff3878');?>;
 div#status:before{
 	background-image:url( $LogoLoader );
 }
-body{
-	cursor: url("https://zonapro.us/wp-content/uploads/2017/06/edit.png")0 25, auto;
-}
 header.transparent .logo,.logo{
 	background-repeat:no-repeat;
     background-size: 70%;

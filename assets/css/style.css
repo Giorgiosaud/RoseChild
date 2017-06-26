@@ -5462,7 +5462,6 @@ div#status{
 }
 @media only screen and (max-width: 1024px){
 	header.transparent .logo{
-		background-image: url( https://digitalprintpublicidad.com/site/wp-content/uploads/2017/05/logo-1.png ) !important;
 		background-position: 10px;
 		background-size:160px;
 	}
