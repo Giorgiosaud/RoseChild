@@ -8,12 +8,12 @@ function your_parent_theme_setup() {
  */
 function rose_child_portfolio_metabox(){
 // Start with an underscore to hide fields from custom fields list
-	$prefix = '_zonapro_';
+	// $prefix = '_zonapro_';
 	/**
 	 * Sample metabox to demonstrate each field type included
 	 */
 	$cmb = new_cmb2_box( array(
-		'id'            => $prefix.'links_metabox',
+		'id'            => rose_get_prefix('links_metabox'),
 		'title'         => __( 'External Embendable Links', 'zonapro' ),
 		'object_types'  => array( 'portfolio', ), // Post type
 		'context'       => 'normal',
@@ -23,7 +23,7 @@ function rose_child_portfolio_metabox(){
 		// 'closed'     => true, // Keep the metabox closed by default
 	) );
 	$group_field_id = $cmb->add_field( array(
-		'id'          => $prefix.'embeds_group',
+		'id'          => rose_get_prefix('embeds_group'),
 		'type'        => 'group',
 		'description' => __( 'Generate a new oembed', 'cmb2' ),
 	// 'repeatable'  => false, // use false if you want non-repeatable group
@@ -37,7 +37,7 @@ function rose_child_portfolio_metabox(){
 		) );
 	$cmb->add_group_field( $group_field_id, array(
 		'name' => 'Link oEmbed',
-		'id'   => $prefix.'oembed',
+		'id'   => rose_get_prefix('oembed'),
 		'desc' => 'Enter a youtube, twitter, or instagram URL. Supports services listed at <a href="http://codex.wordpress.org/Embeds">http://codex.wordpress.org/Embeds</a>.',
 		'type' => 'oembed',
 	// 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
