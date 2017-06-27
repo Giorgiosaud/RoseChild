@@ -99,3 +99,16 @@ function rose_child_social_link( $atts ){
     $outp.='"><i class="'. esc_attr( $atts['icon'] ) .'"></i></a> ';
     return $outp;
 }
+// Before VC Init
+add_action( 'vc_before_init', 'vc_before_init_actions' );
+ 
+function vc_before_init_actions() {
+     
+    // Link your VC elements's folder
+    if( function_exists('vc_set_shortcodes_templates_dir') ){ 
+     
+        vc_set_shortcodes_templates_dir( get_stylesheet_directory() . '/vc-elements' );
+         
+    }
+     
+}
