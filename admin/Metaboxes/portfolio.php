@@ -1,7 +1,9 @@
 <?php 
 add_action( 'after_setup_theme', 'your_parent_theme_setup', 9 );
 function your_parent_theme_setup() {    
-add_action( 'cmb2_admin_init', 'rose_child_portfolio_metabox' );
+	add_action( 'cmb2_admin_init', 'rose_child_portfolio_metabox' );
+
+	add_action( 'cmb2_admin_init', 'cmb2_sample_metaboxes' );
 }
 /**
  * Hook in and add a demo metabox. Can only happen on the 'cmb2_init' hook.
@@ -13,7 +15,7 @@ function rose_child_portfolio_metabox(){
 	 * Sample metabox to demonstrate each field type included
 	 */
 	$cmb = new_cmb2_box( array(
-		'id'            => 'links_metabox',
+		'id'            => $prefix.'links_metabox',
 		'title'         => __( 'External Embendable Links', 'zonapro' ),
 		'object_types'  => array( 'portfolio', ), // Post type
 		'context'       => 'normal',
@@ -44,8 +46,6 @@ function rose_child_portfolio_metabox(){
 		) );
 }
 
-
-add_action( 'cmb2_admin_init', 'cmb2_sample_metaboxes' );
 /**
  * Define the metabox and field configurations.
  */
