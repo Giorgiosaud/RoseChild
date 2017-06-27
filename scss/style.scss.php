@@ -164,7 +164,31 @@ a:hover,
 .socicon-whatsapp{
 	color:#20B038;
 }
+.socicon-twitter{
+	color:#4da7de;
+}
+.socicon-github{
+	color:#221e1b;
+}
+.socicon-behance{
+	color:#000;
+}
+.socicon-skype{
+	color:#28abe3;
+}
+.socicon-youtube{
+	color:#e02a20;
+}
+.socicon-youtube{
+	color:#51b5e7;
+}
+.socicon-google{
+	color:#4285f4;
+}
 
+.socicon-instagram{
+	color:#000;
+}
 .socicon-facebook{
 	color:#3e5b98
 }
