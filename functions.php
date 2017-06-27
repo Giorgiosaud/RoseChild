@@ -76,4 +76,26 @@ function my_theme_enqueue_styles() {
     add_editor_style( 'editor-style.sass' );
   }
 // you can also use .less files as mce editor style sheets
+add_shortcode( 'social-link-zp', 'rose_child_social_link' );
+function rose_child_social_link( $atts ){
+    $atts = shortcode_atts( array(
+        'icon' => 'icon-facebook',
+        'link' => '#',
+        'skype'='',
+        'whatsapp'='',
+    ), $atts );
+    $outp='<a href="';
 
+    if($atts['link']!='#'){
+    $outp=. esc_url( $atts['link'] );
+    }
+    elseif($atts['skype']!=''){
+     $outp=.'skype:'.esc_attr( $atts['skype'] );
+    }
+    elseif($atts['whatsapp']!=''){
+      $num=esc_attr($atts['whatsapp']);
+      $outp=."https://api.whatsapp.com/send?phone=$num&text=Te%20Contacte%20por%20la%20pagina%20web%20http%3A%2F%2Fzonapro.us%20ya%20que%20me%20interesa%20hablar%20contigo%20para%20un%20proyecto";
+    }
+    $outp=.'"><i class="'. esc_attr( $atts['icon'] ) .'"></i></a> ';
+    return $outp;
+}
