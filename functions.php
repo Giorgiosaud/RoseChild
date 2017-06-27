@@ -81,8 +81,8 @@ function rose_child_social_link( $atts ){
     $atts = shortcode_atts( array(
         'icon' => 'icon-facebook',
         'link' => '#',
-        'skype'='',
-        'whatsapp'='',
+        'skype'=>'',
+        'whatsapp'=>'',
     ), $atts );
     $outp='<a href="';
 
