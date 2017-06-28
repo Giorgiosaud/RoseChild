@@ -33,8 +33,9 @@
 
                 <?php $i++; endforeach;
                 $embeds=rose_get_meta( get_the_ID(), 'embeds_group');
-                var_dump($embeds);
+
                 foreach ( (array) $embeds as $key => $embed ) {
+                var_dump($embed);
                     ?>
                     <div class="spacer"></div>
                     <?php
