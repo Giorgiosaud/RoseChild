@@ -54,12 +54,12 @@ $class[] = $nav_align;
 	$posts_per_page = $posts_per_page > 0 ? (int)$posts_per_page : -1;
 
 	$paged = (int) is_front_page() ? (get_query_var('page') ? get_query_var('page') : 1 ) : (get_query_var('paged') ? get_query_var('paged') : 1);
-
+	$idsArray=explode(',',$ids);
 	$args = array(
 	    'post_type' => 'portfolio',
 		'paged' => $paged,
 		'posts_per_page' =>$posts_per_page,
-
+		'post__in'=>$idsArray,
 	    'post_status' => 'publish'
 	);
 
