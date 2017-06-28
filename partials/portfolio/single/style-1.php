@@ -39,7 +39,7 @@
                     ?>
                     <div class="spacer"></div>
                     <?php
-                var_dump($embed);
+                    var_dump($embed['rose_oembed']);
                     echo wp_oembed_get( $embed['rose_oembed']);
                 }
 
