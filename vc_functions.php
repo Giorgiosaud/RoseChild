@@ -149,5 +149,5 @@ vc_map( array(
 ) );
 
 }
-class WPBakeryShortCode_qk_portfolio extends WPBakeryShortCode {
+class WPBakeryShortCode_qk_portfolio_by_id extends WPBakeryShortCode {
 }
