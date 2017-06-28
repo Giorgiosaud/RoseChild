@@ -51,6 +51,20 @@ function rose_child_portfolio_metabox(){
 		'show_names'   => true, // Show field names on the left
 		) );
 	$meta_related->add_field( array(
+		'name' => 'Titulo',
+		'desc' => 'Titulo para describir proyectos relacionados',
+		'type' => 'title',
+		'default' => 'PROYECTOS RELACIONADOS',
+		'id'   => rose_get_prefix('related_portfolios_title')
+		) );
+	$meta_related->add_field( array(
+		'name' => 'Subtitulo',
+		'desc' => 'Subtitulo  proyectos relacionados',
+		'default' => 'Conoce los proyectos relacionados',
+		'id' => rose_get_prefix('related_portfolios_sub_title'),
+		'type' => 'textarea_small'
+		) );
+	$meta_related->add_field( array(
 		'name'      	=> __( 'Select Portfolios', 'cmb2' ),
 		'id'        	=> rose_get_prefix('related_portfolios'),
 		'type'      	=> 'post_search_ajax',

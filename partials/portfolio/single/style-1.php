@@ -80,12 +80,14 @@
 <div class="col-md-12">
     <?php 
     $related_posts = rose_get_meta( get_the_ID(), 'related_portfolios'); if( ! empty( $related_posts  ) ):
+    $related_posts_title = rose_get_meta( get_the_ID(), 'related_portfolios_title'); if( ! empty( $related_posts  ) ):
+    $related_posts_sub_title = rose_get_meta( get_the_ID(), 'related_portfolios_sub_title'); if( ! empty( $related_posts  ) ):
     $commaRP=implode(', ', $related_posts);
                 // echo $commaRP;
-    $text="[vc_row el_id='related' css='.vc_custom_1476548320557{padding-top: 100px !important;}' el_class='portfolio portfolio-style-two section-area no-pd-b'][vc_column][qk_title title='PORTAFOLIO RELACIONADO' sub_title='Conoce los proyectos relacionados'  tpl='' type_heading='' no_title='' title1='' font_style1='' no_line='' color_line1='' pos_line='' margin_line='' font_icon=''][qk_portfolio_by_id style='gutters' el_align='text-center' columns='4'  posts_per_page='4' ids='$commaRP' orderby='date' order='DESC'][/vc_column][/vc_row]";
-    echo do_shortcode(do_shortcode($text));
-    endif;?>
-    <?php echo do_shortcode('[fbcomments url="" width="100%" count="on" title="Comentarios" num="10" scheme="light" countmsg="Maravillosos Comentarios!"]'); ?>
+    $text="[vc_row full_width='stretch_row' el_id='related' el_class='portfolio portfolio-style-two section-area no-pd-b'][vc_column][qk_title title='$related_posts_title' sub_title='$related_posts_sub_title'  tpl='' type_heading='' no_title='' title1='' font_style1='' no_line='' color_line1='' pos_line='' margin_line='' font_icon=''][qk_portfolio_by_id style='gutters' el_align='text-center' columns='4'  posts_per_page='4' ids='$commaRP' orderby='date' order='DESC'][/vc_column][/vc_row]";
+    echo do_shortcode($text);
+    endif;
+    echo do_shortcode('[fbcomments url="" width="100%" count="on" title="Comentarios" num="10" scheme="light" countmsg="Maravillosos Comentarios!"]'); ?>
 </div>
 </div>
 </section>
