@@ -32,6 +32,9 @@
                 ?>
 
                 <?php $i++; endforeach;?>
+                <?php $related_posts = rose_get_meta( get_the_ID(), 'related_portfolios'); if( ! empty( $related_posts  ) ):
+                    var_dump($related_posts);
+                endif;?>
             </div>
         <?php endif;?>
         <div class="portfolio-project-details col-md-3">
