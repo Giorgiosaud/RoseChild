@@ -53,7 +53,7 @@ function rose_child_portfolio_metabox(){
 	$meta_related->add_field( array(
 		'name' => 'Titulo',
 		'desc' => 'Titulo para describir proyectos relacionados',
-		'type' => 'title',
+		'type' => 'text',
 		'default' => 'PROYECTOS RELACIONADOS',
 		'id'   => rose_get_prefix('related_portfolios_title')
 		) );
