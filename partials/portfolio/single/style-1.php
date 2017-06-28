@@ -31,7 +31,13 @@
 
                 ?>
 
-                <?php $i++; endforeach;?>
+                <?php $i++; endforeach;
+                $embeds=rose_get_meta( get_the_ID(), 'embeds_group');
+                foreach ( (array) $embeds as $key => $embed ) {
+                    var_dump($embed);
+                }
+
+                ?>
                 
             </div>
         <?php endif;?>
