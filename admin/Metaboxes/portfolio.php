@@ -21,7 +21,7 @@ function rose_child_portfolio_metabox(){
 		'show_names'    => true, // Show field names on the left
 		// 'cmb_styles' => false, // false to disable the CMB stylesheet
 		// 'closed'     => true, // Keep the metabox closed by default
-	) );
+		) );
 	$group_field_id = $cmb->add_field( array(
 		'id'          => rose_get_prefix('embeds_group'),
 		'type'        => 'group',
@@ -42,4 +42,27 @@ function rose_child_portfolio_metabox(){
 		'type' => 'oembed',
 	// 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
 		) );
+	$meta_related = new_cmb2_box( array(
+		'id'           => rose_get_prefix('related_portfolios_meta'),
+		'title'        => __( 'Related Portfolio', 'cmb2' ),
+		'object_types' => array( 'portfolio' ), // Post type
+		'context'      => 'normal',
+		'priority'     => 'high',
+		'show_names'   => true, // Show field names on the left
+		) );
+	$meta_related->add_field( array(
+		'name'      	=> __( 'Select Portfolios', 'cmb2' ),
+		'id'        	=> rose_get_prefix('related_portfolios'),
+		'type'      	=> 'post_search_ajax',
+		'desc'			=> __( '(Start typing post title)', 'cmb2' ),
+		// Optional :
+		'limit'      	=> 10, 		// Limit selection to X items only (default 1)
+		'sortable' 	 	=> true, 	// Allow selected items to be sortable (default false)
+		'query_args'	=> array(
+			'post_type'			=> array( 'portfolio' ),
+			'post_status'		=> array( 'publish' ),
+			'posts_per_page'	=> -1
+			)
+		) );
+
 }
