@@ -34,16 +34,18 @@
                 <?php $i++; endforeach;
                 $embeds=rose_get_meta( get_the_ID(), 'embeds_group');
                 var_dump($embeds);
-                foreach ( (array) $embeds as $key => $embed ) {
-                
-                    ?>
-                    <div class="spacer"></div>
-                    <div class="responsive-iframe">
-                    <?php
-                    echo wp_oembed_get( $embed['rose_oembed']);
-                    ?>
-                    </div>
-                    <?php
+                if($embeds){
+                    foreach ( (array) $embeds as $key => $embed ) {
+                        
+                        ?>
+                        <div class="spacer"></div>
+                        <div class="responsive-iframe">
+                            <?php
+                            echo wp_oembed_get( $embed['rose_oembed']);
+                            ?>
+                        </div>
+                        <?php
+                    }
                 }
 
                 ?>
