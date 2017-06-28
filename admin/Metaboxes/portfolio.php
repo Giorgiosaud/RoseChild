@@ -28,9 +28,9 @@ function rose_child_portfolio_metabox(){
 		'description' => __( 'Generate a new oembed', 'cmb2' ),
 	// 'repeatable'  => false, // use false if you want non-repeatable group
 		'options'     => array(
-		'group_title'   => __( 'Entry {#}', 'cmb2' ), // since version 1.1.4, {#} gets replaced by row number
-		'add_button'    => __( 'Add Another Entry', 'cmb2' ),
-		'remove_button' => __( 'Remove Entry', 'cmb2' ),
+		'group_title'   => __( 'Link {#}', 'zonapro' ), // since version 1.1.4, {#} gets replaced by row number
+		'add_button'    => __( 'Añadir Link', 'zonapro' ),
+		'remove_button' => __( 'Eliminar Link', 'zonapro' ),
 		'sortable'      => true, // beta
 		// 'closed'     => true, // true to have the groups closed by default
 		),
