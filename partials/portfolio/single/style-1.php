@@ -38,9 +38,12 @@
                 
                     ?>
                     <div class="spacer"></div>
+                    <div class="responsive-iframe">
                     <?php
-                    var_dump($embed['rose_oembed']);
                     echo wp_oembed_get( $embed['rose_oembed']);
+                    ?>
+                    </div>
+                    <?php
                 }
 
                 ?>

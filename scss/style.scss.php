@@ -192,6 +192,22 @@ a:hover,
 .socicon-facebook{
 	color:#3e5b98
 }
+.responsive-iframe {
+position: relative;
+padding-bottom: 65.25%;
+padding-top: 30px;
+height: 0;
+overflow: auto; 
+-webkit-overflow-scrolling:touch; //<<--- THIS IS THE KEY 
+border: solid black 1px;
+} 
+.responsive-iframe iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
 @media only screen and (max-width: 1024px){
 	header.transparent .logo{
 		background-image: url( $LogoDarkChild ) !important;
