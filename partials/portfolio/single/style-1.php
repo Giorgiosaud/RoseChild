@@ -80,11 +80,11 @@
 <div class="col-md-12">
     <?php 
     $related_posts_title = rose_get_meta( get_the_ID(), 'related_portfolios_title'); 
-    if( ! empty( $related_posts_title  ) ){
+    if( empty( $related_posts_title  ) ){
         $related_posts_title='';
     }
     $related_posts_sub_title = rose_get_meta( get_the_ID(), 'related_portfolios_sub_title'); 
-    if( ! empty( $related_posts_sub_title  ) ){
+    if( empty( $related_posts_sub_title  ) ){
         $related_posts_sub_title='';
     }
     $related_posts = rose_get_meta( get_the_ID(), 'related_portfolios'); if( ! empty( $related_posts  ) ):
