@@ -33,7 +33,7 @@
 
                 <?php $i++; endforeach;
                 $embeds=rose_get_meta( get_the_ID(), 'embeds_group');
-                var_dump($embeds);
+                // var_dump($embeds);
                 if($embeds){
                     foreach ( (array) $embeds as $key => $embed ) {
                         
