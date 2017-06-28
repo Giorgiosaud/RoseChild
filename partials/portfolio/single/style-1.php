@@ -34,6 +34,9 @@
                 <?php $i++; endforeach;
                 $embeds=rose_get_meta( get_the_ID(), 'embeds_group');
                 foreach ( (array) $embeds as $key => $embed ) {
+                    ?>
+                    <div class="spacer"></div>
+                    <?php
                     echo wp_oembed_get( $embed['rose_oembed']);
                 }
 
