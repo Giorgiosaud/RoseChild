@@ -1,3 +1,4 @@
+<?php die('test');?>
 <!DOCTYPE html>
 <!--[if IE 9 ]>
 <html class="isie ie9 no-js" <?php language_attributes(); ?>>
