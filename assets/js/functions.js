@@ -629,7 +629,22 @@ function submitForm(){
   return msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./);
 }
 
-
+$('a').each( function() {
+  var $this = $(this), 
+  target = this.hash;
+  $(this).click(function (e) { 
+    e.preventDefault();
+    if( $this.length > 0 ) {
+      if($this.attr('href') == '#' ) {
+                // Do nothing   
+              } else {
+               $('html, body').animate({ 
+                scrollTop: ($(target).offset().top) - 60 
+              }, 1000);
+             }  
+           }
+         });
+});  
 
 })(window.jQuery)
 

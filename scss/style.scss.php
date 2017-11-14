@@ -13,6 +13,7 @@ div#status:before{
 .m-team-member-social-icons a
 {
 	border-radius: 50%;
+	font-size: 1.8rem;
 	i{
 		color:#fff;
 	}
