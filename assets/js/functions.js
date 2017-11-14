@@ -157,7 +157,7 @@
   $(".m-accordion > dt ").first().addClass("active");
   
   $(".m-accordion > dt ").click(function(){
-
+    
     var current = $(this).next("dd");
     $(".m-accordion > dt").removeClass("active");
     $(this).addClass("active");
@@ -641,21 +641,9 @@ $('a').each( function() {
                $('html, body').animate({ 
                 scrollTop: ($(target).offset().top) - 60 
               }, 1000);
-               if($('body').hasClass('home')){
-                var currentNode = null;
-                $('.section-area').each(function(){
-                  var currentId = jQuery(this).attr('id');
-                  if(jQuery(window).scrollTop() >= jQuery('#'+currentId).offset().top - 95)
-                  {
-                    currentNode = currentId;
-                    console.info(currentNode);
-                  }
-                });
-                $('.primary-navigation li.menu-item').removeClass('selected').find('a[href="#'+currentNode+'"]').parent().addClass('selected');
-              }
-            }  
-          }
-        });
+             }  
+           }
+         });
 });  
 
 })(window.jQuery)
