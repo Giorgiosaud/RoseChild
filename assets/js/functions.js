@@ -157,7 +157,7 @@
   $(".m-accordion > dt ").first().addClass("active");
   
   $(".m-accordion > dt ").click(function(){
-    
+
     var current = $(this).next("dd");
     $(".m-accordion > dt").removeClass("active");
     $(this).addClass("active");
@@ -629,7 +629,7 @@ function submitForm(){
   return msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./);
 }
 
-$('a').each( function() {
+$('.primary-navigation a').each( function() {
   var $this = $(this), 
   target = this.hash;
   $(this).click(function (e) { 
@@ -641,6 +641,8 @@ $('a').each( function() {
                $('html, body').animate({ 
                 scrollTop: ($(target).offset().top) - 60 
               }, 1000);
+               $this.removeClass('selected');
+               $(this).addClass('selected');
              }  
            }
          });
