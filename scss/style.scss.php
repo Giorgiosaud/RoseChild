@@ -18,6 +18,9 @@ div#status:before{
 		color:#fff;
 	}
 }
+.m-team-member.circled-image img {
+    border-radius: 50%;
+}
 header.transparent .logo,.logo{
 	background-repeat:no-repeat;
     background-size: 70%;
