@@ -10,8 +10,12 @@ div#status:before{
 .m-team-cap{
 	border-radius:50%;
 }
-.m-team-member-social-icons a i{
-	color:#fff;
+.m-team-member-social-icons a
+{
+	border-radius: 50%;
+	i{
+		color:#fff;
+	}
 }
 header.transparent .logo,.logo{
 	background-repeat:no-repeat;
