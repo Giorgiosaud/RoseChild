@@ -7,6 +7,9 @@ $main_color: <?php echo rose_get_option('main-color','#ff3878');?>;
 div#status:before{
 	background-image:url( $LogoLoader );
 }
+.m-team-cap{
+	border-radius:50%;
+}
 header.transparent .logo,.logo{
 	background-repeat:no-repeat;
     background-size: 70%;
