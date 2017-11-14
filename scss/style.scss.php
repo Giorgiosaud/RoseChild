@@ -15,9 +15,6 @@ div#status:before{
 	border-radius: 50%;
 	i{
 		color:#fff;
-		&:hover{
-			color:rgba(255,255,255,.4);
-		}
 	}
 }
 header.transparent .logo,.logo{
