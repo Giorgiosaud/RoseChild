@@ -19,18 +19,18 @@ div#status:before{
 	}
 }
 .m-team-member.circled-image img {
-    border-radius: 50%;
+	border-radius: 50%;
 }
 header.transparent .logo,.logo{
 	background-repeat:no-repeat;
-    background-size: 70%;
-    background-position: center;
-    background-color: $main-color;
-    height: 70px;
-    width: 70px;
-    border-radius: 9em;
-    text-align: center;
-    transition: all 2s;
+	background-size: 70%;
+	background-position: center;
+	background-color: $main-color;
+	height: 70px;
+	width: 70px;
+	border-radius: 9em;
+	text-align: center;
+	transition: all 2s;
 }
 .black-header .logo, header.transparent .logo{
 	background-image: url( $LogoLightChild	 );
@@ -45,10 +45,10 @@ header.transparent .logo{
 	background-color: #49b2d8;
 }
 .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px 0;
 }
 header{
 	height: auto;
@@ -175,52 +175,54 @@ a:hover,
 .border-body .border-box-style{
 	background-color: $border_color;
 }
-.socicon-whatsapp{
-	color:#20B038;
-}
-.socicon-twitter{
-	color:#4da7de;
-}
-.socicon-github{
-	color:#221e1b;
-}
-.socicon-behance{
-	color:#000;
-}
-.socicon-skype{
-	color:#28abe3;
-}
-.socicon-youtube{
-	color:#e02a20;
-}
-.socicon-youtube{
-	color:#51b5e7;
-}
-.socicon-google{
-	color:#4285f4;
-}
+.socicon-color{
+	.socicon-whatsapp{
+		color:#20B038;
+	}
+	.socicon-twitter{
+		color:#4da7de;
+	}
+	.socicon-github{
+		color:#221e1b;
+	}
+	.socicon-behance{
+		color:#000;
+	}
+	.socicon-skype{
+		color:#28abe3;
+	}
+	.socicon-youtube{
+		color:#e02a20;
+	}
+	.socicon-youtube{
+		color:#51b5e7;
+	}
+	.socicon-google{
+		color:#4285f4;
+	}
 
-.socicon-instagram{
-	color:#000;
-}
-.socicon-facebook{
-	color:#3e5b98
+	.socicon-instagram{
+		color:#000;
+	}
+	.socicon-facebook{
+		color:#3e5b98
+	}
 }
 .responsive-iframe {
-position: relative;
-padding-bottom: 65.25%;
-padding-top: 30px;
-height: 0;
-overflow: auto; 
+	position: relative;
+	padding-bottom: 65.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: auto; 
 -webkit-overflow-scrolling:touch; //<<--- THIS IS THE KEY 
 border: solid black 1px;
 } 
 .responsive-iframe iframe {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 @media only screen and (max-width: 1024px){
 	header.transparent .logo{
