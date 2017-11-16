@@ -224,6 +224,14 @@ border: solid black 1px;
 	width: 100%;
 	height: 100%;
 }
+.hover-circled .vc-hoverbox-block {
+    border-radius: 50%;
+    width: 450px;
+    height: 450px;
+    margin: auto;
+    left: 50%;
+    margin-left: -225px;
+}
 @media only screen and (max-width: 1024px){
 	header.transparent .logo{
 		background-image: url( $LogoDarkChild ) !important;

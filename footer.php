@@ -52,7 +52,9 @@
 		if( ! rose_get_option('hide_cart', true) && rose_get_option('exist_woo') ){
 			require_once ROSE_ABS_PATH .'/framework/mini-cart.php';
 		}
-		wp_footer(); ?>
+		wp_footer(); 
+		?>
+
 	</div>
 </body>
 </html>
