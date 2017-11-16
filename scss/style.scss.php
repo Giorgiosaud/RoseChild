@@ -10,6 +10,9 @@ div#status:before{
 .m-team-cap{
 	border-radius:50%;
 }
+.clearfix{
+	clear:booth;
+}
 .m-team-member-social-icons a
 {
 	border-radius: 50%;
@@ -242,7 +245,7 @@ border: solid black 1px;
 		position: relative !important;
     	left: auto !important;
     	top: auto !important;
-    	margin: 0 5px;
+    	margin: 0 5px !important;
 	}
 	.wpb_image_grid_ul{
 		position: relative !important;
