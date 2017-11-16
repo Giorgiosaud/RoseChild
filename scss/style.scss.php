@@ -226,15 +226,15 @@ border: solid black 1px;
 }
 .hover-circled {
 	.vc-hoverbox-inner{
-		min-height:450px;
+		min-height:380px !important;
 	}
 	.vc-hoverbox-block {
 	    border-radius: 50%;
-	    width: 450px;
-	    height: 450px;
+	    width: 380px;
+	    height: 380px;
 	    margin: auto;
 	    left: 50%;
-	    margin-left: -225px;
+	    margin-left: -190px;
 	}
 }
 @media only screen and (max-width: 1024px){
