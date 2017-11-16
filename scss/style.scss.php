@@ -237,6 +237,20 @@ border: solid black 1px;
 	    margin-left: -190px;
 	}
 }
+.programas-imagen{
+	.isotope-item{
+		position: relative !important;
+    	left: auto !important;
+    	top: auto !important;
+    	margin: 0 5px;
+	}
+	.wpb_image_grid_ul{
+		position: relative !important;
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+	}
+}
 @media only screen and (max-width: 1024px){
 	header.transparent .logo{
 		background-image: url( $LogoDarkChild ) !important;
