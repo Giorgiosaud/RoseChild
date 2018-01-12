@@ -40,7 +40,6 @@ header.transparent .logo,.logo{
 	background-color: #e3e3e3;
 }
 header.transparent .logo{
-	background-image: url( $LogoLoader );
 	background-color: #e3e3e3;
 }
 .logo{
@@ -255,7 +254,6 @@ border: solid black 1px;
 }
 @media only screen and (max-width: 1024px){
 	header.transparent .logo{
-		background-image: url( $LogoDarkChild ) !important;
 		width: auto;
 	}
 }
