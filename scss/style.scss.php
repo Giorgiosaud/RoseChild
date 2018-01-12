@@ -36,7 +36,7 @@ header.transparent .logo,.logo{
 	transition: all 2s;
 }
 .black-header .logo, header.transparent .logo{
-	background-image: url( $LogoLightChild	 );
+	
 	background-color: #e3e3e3;
 }
 header.transparent .logo{
@@ -44,7 +44,6 @@ header.transparent .logo{
 	background-color: #e3e3e3;
 }
 .logo{
-	background-image: url( $LogoDarkChild );	
 	background-color: #49b2d8;
 }
 .header-container {
